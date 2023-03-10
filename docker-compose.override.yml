@@ -37,9 +37,10 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: "Development"
       ASPNETCORE_URLS: "http://*:80"
+      
       # These values add to/override ASP.NET Core configuration values.
       # See rendering host Startup for details.
-      LayoutService__Handler__Uri: "http://rendering/sitecore/api/layout/render/jss"
+      LayoutService__Handler__Uri: "http://rendering/sitecore/api/layout/render"
       Analytics__SitecoreInstanceUri: "http://rendering"
       JSS_EDITING_SECRET: ${JSS_EDITING_SECRET}
     depends_on:
